@@ -39,3 +39,14 @@ function heroImageSlide (e,dir) {
     items[active].classList.add('active');
     contents[active].classList.add('active');
 }
+
+// ATTRIBUTION
+const attribution = document.querySelector('.attribution__toggle');
+attribution.onclick = function(e) {
+    e.preventDefault()
+    if (attribution.classList.contains('open')) {
+        attribution.classList.remove('open');
+    } else {
+        attribution.classList.add('open');
+    }
+}
